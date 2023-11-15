@@ -9,8 +9,9 @@ export const Nav = styled.nav`
   background: ${(props) => props.theme.black};
   border: 1px solid ${(props) => props.theme.white};
   padding: 1rem;
-  border-radius: 6px;
-
+  box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
