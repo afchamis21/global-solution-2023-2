@@ -6,6 +6,7 @@ export const Wrapper = styled.header`
   background: ${(props) => props.theme.black};
   position: sticky;
   top: 0;
+  z-index: 10;
 `
 
 export const HeaderContainer = styled(Container)`

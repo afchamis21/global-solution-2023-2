@@ -32,8 +32,8 @@ export function QuestionCard({
       {question.options.map((option, i) => (
         <Option
           key={option.text}
-          isSelected={isSelected}
-          isCorrect={option.isCorrect}
+          isselected={isSelected}
+          iscorrect={option.isCorrect}
         >
           <input
             type="radio"

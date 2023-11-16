@@ -18,6 +18,7 @@ export const Nav = styled.nav`
   width: max-content;
   max-width: calc(100vw - 4rem);
   text-align: right;
+  z-index: 10;
 `
 
 export const Link = styled(NavLink)`

@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Layout } from './layouts/layout'
 import { Home } from './components/home'
 import { GeneralHealthImprovements } from './components/general-health-improvements'
+import { PreventionAndTreatmentOfNonCommunicableDiseases } from './components/prevention-and-treatment-of-non-communicable-diseases'
 
 type Route = {
   path: string
@@ -17,7 +18,7 @@ export const routes: Route[] = [
   },
   {
     path: 'prevencao-e-tratamento-de-doencas-nao-transmissiveis',
-    element: <Home />,
+    element: <PreventionAndTreatmentOfNonCommunicableDiseases />,
     title: 'Prevenção e tratamento de doenças não transmissíveis',
   },
   {

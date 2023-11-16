@@ -20,7 +20,7 @@ export function GeneralHealthImprovements() {
       </Banner>
       <Section>
         <ParagraphContainer>
-          <h1>A Tecnologia na Vanguarda da Saúde</h1>
+          <h2>A Tecnologia na Vanguarda da Saúde</h2>
           <p>
             Numa era onde a tecnologia permeia todos os aspectos da vida, sua
             influência na saúde é particularmente marcante. Este texto explora

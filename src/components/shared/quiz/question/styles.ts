@@ -21,8 +21,8 @@ export const QuestionContainer = styled.div<QuestionProps>`
 `
 
 interface OptionProps {
-  isSelected: boolean
-  isCorrect: boolean
+  isselected: boolean
+  iscorrect: boolean
 }
 
 export const Option = styled.label<OptionProps>`
