@@ -3,6 +3,8 @@ import { Layout } from './layouts/layout'
 import { Home } from './components/home'
 import { GeneralHealthImprovements } from './components/general-health-improvements'
 import { PreventionAndTreatmentOfNonCommunicableDiseases } from './components/prevention-and-treatment-of-non-communicable-diseases'
+import { ReductionInInfantMortality } from './components/reduction-in-infant-mortality'
+import { CombatingCommunicableDiseases } from './components/combating-communicable-diseases'
 
 type Route = {
   path: string
@@ -25,6 +27,16 @@ export const routes: Route[] = [
     path: 'melhoria-geral-da-saude',
     element: <GeneralHealthImprovements />,
     title: 'Melhoria Geral da Saúde',
+  },
+  {
+    path: 'redução-mortalidade-Infantil',
+    element: <ReductionInInfantMortality />,
+    title: 'Redução da mortalidade Infantil',
+  },
+  {
+    path: 'combate-doencas-transmissíveis',
+    element: <CombatingCommunicableDiseases />,
+    title: 'Combate a doenças transmissíveis',
   },
 ]
 
