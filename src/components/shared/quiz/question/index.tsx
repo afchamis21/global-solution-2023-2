@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Question } from '../../../../@types'
 import { Option, QuestionContainer } from './styles'
 
@@ -15,10 +15,6 @@ export function QuestionCard({
 }: QuestionProps) {
   const [isSelected, setIsSelected] = useState(false)
 
-  useEffect(() => {
-    question.options.sort(() => Math.random() - 0.5)
-  }, [question])
-
   function handleAnswerQuestion(isCorrect: boolean) {
     if (isCorrect) {
       increaseCorrectQuestions()
@@ -32,8 +28,9 @@ export function QuestionCard({
       {question.options.map((option, i) => (
         <Option
           key={option.text}
-          isselected={isSelected}
-          iscorrect={option.isCorrect}
+          isSelected={isSelected}
+          isCorrect={option.isCorrect}
+          htmlFor={`${option.text}-${i}`}
         >
           <input
             type="radio"
@@ -41,7 +38,7 @@ export function QuestionCard({
             onChange={() => handleAnswerQuestion(option.isCorrect)}
             disabled={isSelected}
           />
-          <label htmlFor={`${option.text}-${i}`}>{option.text}</label>
+          <p>{option.text}</p>
         </Option>
       ))}
     </QuestionContainer>

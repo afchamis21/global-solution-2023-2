@@ -17,7 +17,6 @@ export const Nav = styled.nav`
   gap: 0.5rem;
   width: max-content;
   max-width: calc(100vw - 4rem);
-  text-align: right;
   z-index: 10;
 `
 

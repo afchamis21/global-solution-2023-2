@@ -8,4 +8,4 @@ export const TextHeader = styled.img`
 
 TextHeader.defaultProps = {
   src: globalSolution,
-};
+}

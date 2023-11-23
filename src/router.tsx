@@ -19,11 +19,6 @@ export const routes: Route[] = [
     title: 'Home',
   },
   {
-    path: 'prevencao-e-tratamento-de-doencas-nao-transmissiveis',
-    element: <PreventionAndTreatmentOfNonCommunicableDiseases />,
-    title: 'Prevenção e tratamento de doenças não transmissíveis',
-  },
-  {
     path: 'melhoria-geral-da-saude',
     element: <GeneralHealthImprovements />,
     title: 'Melhoria Geral da Saúde',
@@ -37,6 +32,11 @@ export const routes: Route[] = [
     path: 'combate-doencas-transmissíveis',
     element: <CombatingCommunicableDiseases />,
     title: 'Combate a doenças transmissíveis',
+  },
+  {
+    path: 'prevencao-e-tratamento-de-doencas-nao-transmissiveis',
+    element: <PreventionAndTreatmentOfNonCommunicableDiseases />,
+    title: 'Prevenção e tratamento de doenças não transmissíveis',
   },
 ]
 

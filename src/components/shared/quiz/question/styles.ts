@@ -21,8 +21,8 @@ export const QuestionContainer = styled.div<QuestionProps>`
 `
 
 interface OptionProps {
-  isselected: boolean
-  iscorrect: boolean
+  isSelected: boolean
+  isCorrect: boolean
 }
 
 export const Option = styled.label<OptionProps>`
@@ -36,9 +36,6 @@ export const Option = styled.label<OptionProps>`
 
   &:has(input:disabled) {
     cursor: not-allowed;
-    label {
-      cursor: not-allowed;
-    }
   }
 
   &:not(:has(input:disabled)):hover {

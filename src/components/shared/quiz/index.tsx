@@ -54,6 +54,7 @@ export function Quiz({ questions, title }: QuizProps) {
     <Wrapper>
       <QuizHeader>
         <h2>{title}</h2>
+        <p>Para saber mais, leia o texto abaixo...</p>
         <span>
           Corretas:{' '}
           <Detail>

@@ -1,10 +1,10 @@
-import { Banner, Container, Section } from "../../styles/shared";
+import { Banner, Container, Section } from '../../styles/shared'
 
-import { TextHeader } from "../../styles/home";
-import Contact from "./contact";
-import Members from "./members";
-import VideoComponent from "./video-component";
-import { Typography } from "@mui/material";
+import { TextHeader } from '../../styles/home'
+import Contact from './contact'
+import Members from './members'
+import VideoComponent from './video-component'
+import { Typography } from '@mui/material'
 
 export function Home() {
   return (
@@ -19,7 +19,7 @@ export function Home() {
           <VideoComponent />
         </Container>
       </Section>
-      <Banner style={{ padding: "150px" }}>
+      <Banner style={{ padding: '150px' }}>
         <Container>
           <Typography variant="h4" align="center" mb={3}>
             Membros
@@ -33,5 +33,5 @@ export function Home() {
         </Container>
       </Section>
     </>
-  );
+  )
 }
