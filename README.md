@@ -10,7 +10,7 @@ Essa Global Solution foi desenvolvida por:
 
 ### Dependências
 
- Para rodar esse projeto, você deve primeiro instalar suas depêndencias. Para tal rode o comando a seguir se você estiver usando o gerenciador de pacotes **npm**:
+ Para rodar esse projeto, você deve primeiro instalar suas depêndencias. Para tal rode o comando a seguir na sua ferramenta de linha de comando (CLI) se você estiver usando o gerenciador de pacotes **npm**:
 
  ```bash
  npm install
@@ -24,7 +24,7 @@ Essa Global Solution foi desenvolvida por:
 
 ### Inicialização
 
-Para inicializar o projeto rode o comando a seguir se estiver usando **npm**:
+Para inicializar o projeto rode o comando a seguir na sua CLI se estiver usando **npm**:
 
 ```bash
 npm run dev
