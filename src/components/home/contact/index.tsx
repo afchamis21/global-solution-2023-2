@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import {
   Box,
   Container,
@@ -6,53 +6,54 @@ import {
   Button,
   Alert,
   AlertTitle,
-} from '@mui/material';
-import { PaperPlaneRight } from "@phosphor-icons/react";
+} from '@mui/material'
+import { PaperPlaneRight } from '@phosphor-icons/react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-  });
+  })
 
   const [errors, setErrors] = useState({
     name: '',
     email: '',
     message: '',
-  });
+  })
 
-  const [alert, setAlert] = useState(false);
+  const [alert, setAlert] = useState(false)
 
   const handleChange = (e: any) => {
-    const { id, value } = e.target;
+    const { id, value } = e.target
     setFormData((prevData) => ({
       ...prevData,
       [id]: value,
-    }));
-  };
+    }))
+  }
 
   const handleSubmit = () => {
-    const isValid = validateForm();
-    
+    const isValid = validateForm()
+
     if (isValid) {
-      setAlert(true);
+      setAlert(true)
     }
-  };
+  }
 
   const validateForm = () => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const isEmailValid = emailRegex.test(formData.email);
-    const areOtherFieldsValid = formData.name.trim() !== '' && formData.message.trim() !== '';
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const isEmailValid = emailRegex.test(formData.email)
+    const areOtherFieldsValid =
+      formData.name.trim() !== '' && formData.message.trim() !== ''
 
     setErrors({
       name: formData.name.trim() === '' ? 'Campo obrigatório' : '',
       email: isEmailValid ? '' : 'Email inválido',
       message: formData.message.trim() === '' ? 'Campo obrigatório' : '',
-    });
+    })
 
-    return isEmailValid && areOtherFieldsValid;
-  };
+    return isEmailValid && areOtherFieldsValid
+  }
 
   return (
     <>
@@ -65,11 +66,11 @@ const Contact = () => {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          '& .MuiTextField-root': { m: 1, width: '25ch' },
         }}
         noValidate
         autoComplete="off"
-        style={{ padding: "50px" }}
+        style={{ padding: '50px' }}
       >
         <Container maxWidth="sm">
           <h1>Fale Conosco</h1>
@@ -101,7 +102,7 @@ const Contact = () => {
             label="Mensagem"
             multiline
             rows={4}
-            style={{ width: "84%" }}
+            style={{ width: '84%' }}
             placeholder="Escreva sua mensagem!"
             required
             value={formData.message}
@@ -116,9 +117,9 @@ const Contact = () => {
             variant="contained"
             endIcon={<PaperPlaneRight />}
             style={{
-              backgroundColor: "#2F65F4",
-              width: "86%",
-              padding: "0 0 0 10px",
+              backgroundColor: '#2F65F4',
+              width: '86%',
+              padding: '0 0 0 10px',
             }}
           >
             Enviar Mensagem
@@ -126,7 +127,7 @@ const Contact = () => {
         </Container>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

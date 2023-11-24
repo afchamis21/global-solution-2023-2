@@ -20,7 +20,8 @@ export const questions: Question[] = [
   },
   {
     id: 2,
-    title: 'Qual é a importância da vacinação na redução da mortalidade infantil?',
+    title:
+      'Qual é a importância da vacinação na redução da mortalidade infantil?',
     options: [
       { text: 'Não tem impacto significativo.', isCorrect: false },
       { text: 'Aumenta a mortalidade.', isCorrect: false },
@@ -30,7 +31,8 @@ export const questions: Question[] = [
   },
   {
     id: 3,
-    title: 'Qual região do mundo apresentou avanços notáveis na redução da mortalidade infantil nas últimas décadas?',
+    title:
+      'Qual região do mundo apresentou avanços notáveis na redução da mortalidade infantil nas últimas décadas?',
     options: [
       { text: 'Ásia.', isCorrect: true },
       {
@@ -43,7 +45,8 @@ export const questions: Question[] = [
   },
   {
     id: 4,
-    title: 'Qual é o papel da nutrição adequada na redução da mortalidade infantil?',
+    title:
+      'Qual é o papel da nutrição adequada na redução da mortalidade infantil?',
     options: [
       {
         text: 'Não tem impacto.',
