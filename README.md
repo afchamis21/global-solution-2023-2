@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+# Global Solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Essa Global Solution foi desenvolvida por:
+ - André Fernandes Chamis - RM 97891
+ - Gabriel Amorim Martins Gonçalves - RM 550444
+ - Fellipe Signorelli e Sousa Salerno - RM 98123
+ - Lucas Braun Mariano - RM 550534
 
-Currently, two official plugins are available:
+## Instruções
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Dependências
 
-## Expanding the ESLint configuration
+ Para rodar esse projeto, você deve primeiro instalar suas depêndencias. Para tal rode o comando a seguir se você estiver usando o gerenciador de pacotes **npm**:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+ ```bash
+ npm install
+ ```
 
-- Configure the top-level `parserOptions` property like this:
+ Ou esse comando se você estiver utilizando o gerenciador de pacotes **yarn**:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+ ```bash
+ yarn add
+ ```
+
+### Inicialização
+
+Para inicializar o projeto rode o comando a seguir se estiver usando **npm**:
+
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ Ou esse comando se você estiver utilizando o **yarn**:
+
+```bash
+yarn dev
+```
